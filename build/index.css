@@ -1,13 +1,133 @@
 /*!****************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
   \****************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-boilerplate {
-  border: 1px dotted #f03;
+:root {
+  --wp-admin-border-width-focus: 1px solid #000000;
+}
+
+.wp-block.wp-block-post-title.block-editor-block-list__block.editor-post-title.editor-post-title__input.rich-text {
+  max-width: 900px;
+}
+
+.block-editor-default-block-appender {
+  max-width: 900px;
+}
+
+.block-editor-default-block-appender__content {
+  max-width: 900px;
+}
+
+.wp-block-if-blocks-if-testimonials {
+  max-width: 900px !important;
+  padding: 38px 32px 0 32px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.block-editor-inner-blocks {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.block-editor-block-list__block.wp-block {
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.block-editor-block-list__block.wp-block > [data-type="if-blocks/testimonial-item"] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  padding: 26px 22px;
+  background-color: #ffffff;
+  border: 1px solid rgba(189, 198, 206, 0.6);
+}
+.block-editor-block-list__block.wp-block > [data-type="if-blocks/testimonial-item"] .wp-block-if-blocks-if-testimonials-img {
+  position: relative;
+}
+.block-editor-block-list__block.wp-block > [data-type="if-blocks/testimonial-item"] .wp-block-if-blocks-if-testimonials-img.is-loading img {
+  opacity: 0.3;
+}
+.block-editor-block-list__block.wp-block > [data-type="if-blocks/testimonial-item"] .wp-block-if-blocks-if-testimonials-img .components-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.block-editor-block-list__block.wp-block > [data-type="if-blocks/testimonial-item"].is-selected {
+  border: var(--wp-admin-border-width-focus);
+}
+
+.testimonial-info {
+  width: 69%;
+  height: auto;
+}
+.testimonial-info h4, .testimonial-info p {
+  padding: 10px 12px;
+  background-color: rgba(237, 236, 236, 0.6);
+  border-radius: 6px;
+}
+.testimonial-info h4 {
+  margin-bottom: 24px !important;
+}
+.testimonial-info p {
+  min-height: 110px;
+  padding: 16px 14px;
+}
+.testimonial-info .block-editor-rich-text__editable.rich-text {
+  margin: 0;
+}
+
+.testimonial-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+}
+.testimonial-media img {
+  border-radius: 100%;
+}
+.testimonial-media .components-placeholder.components-placeholder {
+  background-color: rgba(237, 236, 236, 0.65);
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.testimonial-media .block-editor-media-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+}
+.testimonial-media .components-button.block-editor-media-placeholder__button.block-editor-media-placeholder__upload-button.is-primary {
+  background-color: #000000;
+}
+.testimonial-media .components-button.is-tertiary {
+  color: #000000;
+}
+.testimonial-media .components-button.is-tertiary:focus {
+  outline: 1px solid #5b6267;
+}
+.testimonial-media .components-form-file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.testimonial-media .components-placeholder.is-medium .components-placeholder__fieldset .components-button, .testimonial-media .components-placeholder.is-small .components-placeholder__fieldset .components-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: 900px !important;
 }
 
 /*# sourceMappingURL=index.css.map*/

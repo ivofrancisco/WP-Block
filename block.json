@@ -1,15 +1,26 @@
 {
-	"apiVersion": 2,
-	"name": "if-blocks/block",
-	"title": "Block",
-	"category": "widgets",
-	"icon": "columns",
-	"description": "Example block written with ESNext standard and JSX support – build step required.",
-	"supports": {
-		"html": false
-	},
-	"textdomain": "block",
-	"editorScript": "file:./build/index.js",
-	"editorStyle": "file:./build/index.css",
-	"style": "file:./build/style-index.css"
+  "apiVersion": 2,
+  "name": "if-blocks/if-testimonials",
+  "title": "IF Testimonials",
+  "category": "media",
+  "description": "A Testimonials Section Block Slider",
+  "supports": {
+	"html": false
+  },
+  "keywords": [
+	"testimonials",
+	"portfolio",
+	"business",
+	"e-commerce"
+  ],
+  "textdomain": "if-testimonials",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+	"columns": {
+	  "type": "number",
+	  "default": 2
+	}
+  }
 }
